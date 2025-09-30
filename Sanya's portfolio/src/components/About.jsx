@@ -6,7 +6,7 @@ export default function About() {
       <div className="about-container">
         <div className="about-image">
           <img
-            src="/images/profile.jpg"
+            src="./images/profile.jpg"
             alt="Sanya Bansal - Data Science Professional"
           />
         </div>
@@ -36,7 +36,7 @@ export default function About() {
             that drive innovation.
           </p>
           <a
-            href="/Sanya Bansal-AI Resume .pdf"
+            href="./Sanya Bansal-AI Resume .pdf"
             className="resume-link"
             target="_blank"
             rel="noopener noreferrer"

@@ -18,7 +18,7 @@ export default function Home() {
         <div className="cta-buttons">
           <Link to="/about" className="btn btn-primary">About Me</Link>
           <Link to="/projects" className="btn btn-secondary">View My Work</Link>
-          <a href="/Sanya Bansal-AI Resume .pdf" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Download Resume</a>
+          <a href="./Sanya Bansal-AI Resume .pdf" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Download Resume</a>
         </div>
         <div className="author-name">
           <h3>DATA SCIENTIST • AI/ML ENGINEER • PROBLEM SOLVER</h3>

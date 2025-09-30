@@ -4,8 +4,10 @@ A modern, responsive portfolio website built with React and Vite, showcasing my 
 
 ## 🌟 Live Demo
 
-- **Live Site**: [Your deployed URL will go here]
+- **Live Site**: [https://sanyabansal115.github.io/My-Web-Development/](https://sanyabansal115.github.io/My-Web-Development/)
 - **Repository**: [https://github.com/Sanyabansal115/My-Web-Development](https://github.com/Sanyabansal115/My-Web-Development)
+
+> **Note**: The site is automatically deployed using GitHub Actions. Any updates to the main branch trigger a new deployment.
 
 ## 📋 Table of Contents
 

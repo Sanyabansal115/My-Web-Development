@@ -17,8 +17,8 @@ export default defineConfig({
   // Enable React plugin for JSX support and fast refresh
   plugins: [react()],
   
-  // Base public path - GitHub Pages requires repo name in path
-  base: '/My-Web-Development/',
+  // Base public path - use relative path for GitHub Pages
+  base: './',
   
   // Build configuration for production
   build: {

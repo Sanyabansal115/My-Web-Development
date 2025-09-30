@@ -1,4 +1,5 @@
 import React from "react";
+import profileImage from "/images/profile.jpg";
 
 export default function About() {
   return (
@@ -6,7 +7,7 @@ export default function About() {
       <div className="about-container">
         <div className="about-image">
           <img
-            src="./images/profile.jpg"
+            src={profileImage}
             alt="Sanya Bansal - Data Science Professional"
           />
         </div>

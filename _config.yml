@@ -1,0 +1,41 @@
+# GitHub Pages Configuration for Sanya's Portfolio
+# Enable GitHub Pages for this repository
+
+# Basic Jekyll configuration (minimal setup for GitHub Pages)
+title: "Sanya Bansal - Portfolio"
+description: "Professional portfolio showcasing skills in AI, machine learning, and software development"
+author: "Sanya Bansal"
+
+# GitHub Pages settings
+baseurl: ""
+url: "https://sanyabansal115.github.io/My-Web-Development"
+
+# Disable Jekyll processing for React app
+exclude:
+  - "Sanya's portfolio/"
+  - node_modules/
+  - "*.md"
+  - "*.json"
+
+# Include all necessary files
+include:
+  - assets/
+  - images/
+  - projects/
+  - "*.html"
+  - "*.css"
+  - "*.js"
+
+# Plugins (GitHub Pages safe)
+plugins:
+  - jekyll-sitemap
+
+# Markdown settings
+markdown: kramdown
+
+# Build settings
+source: .
+destination: _site
+
+# Enable GitHub Pages
+github: [metadata]

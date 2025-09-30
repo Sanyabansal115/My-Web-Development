@@ -3,10 +3,9 @@ import { Link } from 'react-router-dom';
 
 export default function Navigation() {
   return (
-    <nav>
+    <nav className="navigation">
       <div className="logo">
-        <div className="logo-shape">YI</div>
-        <span style={{ fontWeight: 600, color: 'var(--sage-dark)' }}>Your Name</span>
+        <span className="logo-text">Sanya Bansal</span>
       </div>
       <ul className="nav-links">
         <li><Link to="/">Home</Link></li>

@@ -1,35 +1,39 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+/**
+ * App.jsx - Main Application Component
+ * 
+ * This is the root component of Sanya Bansal's portfolio website.
+ * It sets up the React Router for client-side navigation and renders
+ * the MainRouter component which handles all route configurations.
+ * 
+ * @author Sanya Bansal
+ * @version 1.0.0
+ * @since 2025-09-30
+ */
 
-function App() {
-  const [count, setCount] = useState(0)
+// Import necessary React and routing dependencies
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 
+// Import custom components and styles
+import MainRouter from './MainRouter';
+import './index.css';
+
+/**
+ * Main Application Component
+ * 
+ * Serves as the entry point for the entire React application.
+ * Wraps the MainRouter with BrowserRouter to enable client-side routing.
+ * 
+ * @returns {JSX.Element} The complete application wrapped in Router
+ */
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <Router>
+      {/* MainRouter handles all page routing and navigation */}
+      <MainRouter />
+    </Router>
+  );
+};
 
-export default App
+// Export the App component as the default export
+export default App;

@@ -10,13 +10,13 @@ export default function Projects() {
       description:
         "Comprehensive salary analysis using Python and Jupyter Notebook. Analyzed salary distributions, career progression patterns, and compensation trends. Applied statistical methods and created professional visualizations using Matplotlib and Seaborn.",
       icon: "💰",
-      image: "/images/salary-project.png",
+      image: "./images/salary-project.png",
       tags: ["Python", "Jupyter", "Pandas", "Data Analysis"],
       type: "python",
-      notebookLink: "/projects/data-science/Project 1/project_ 1-Salary.ipynb",
+      notebookLink: "./projects/data-science/Project 1/project_ 1-Salary.ipynb",
       slidesLink:
-        "/projects/data-science/Project 1/project_ 1-Salary.slides.html",
-      datasetLink: "/projects/data-science/Project 1/003 salaries-by-college-major.csv",
+        "./projects/data-science/Project 1/project_ 1-Salary.slides.html",
+      datasetLink: "./projects/data-science/Project 1/003 salaries-by-college-major.csv",
     },
     {
       id: 2,

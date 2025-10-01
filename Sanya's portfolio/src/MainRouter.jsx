@@ -1,18 +1,17 @@
 /**
- * MainRouter.jsx - Application Routing Configuration
+ * MainRouter.jsx - Single Page Application Layout
  * 
- * This component handles all routing logic for the portfolio website.
- * It defines the navigation structure and maps URL paths to their
- * corresponding React components using React Router.
+ * This component creates a single-page portfolio layout with smooth scrolling
+ * navigation between sections. All components are rendered on one page with
+ * proper section IDs for navigation.
  * 
  * @author Sanya Bansal
- * @version 1.0.0
+ * @version 2.0.0
  * @since 2025-09-30
  */
 
-// Import React and routing utilities
+// Import React
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
 
 // Import all page components
 import Navigation from './components/Navigation';  // Navigation bar component
@@ -26,8 +25,8 @@ import Contact from './components/Contact';        // Contact information and fo
 /**
  * Main Router Component
  * 
- * Configures all application routes and renders the appropriate component
- * based on the current URL path. The navigation component is persistent
+ * Creates a single-page application layout where all sections are rendered
+ * on one page with smooth scrolling navigation between them.
  * across all routes.
  * 
  * Route Structure:

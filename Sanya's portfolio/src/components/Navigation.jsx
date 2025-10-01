@@ -1,20 +1,77 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
 
 export default function Navigation() {
+  const [activeSection, setActiveSection] = useState('home');
+
+  const scrollToSection = (sectionId) => {
+    setActiveSection(sectionId);
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav className="navigation">
-      <Link to="/" className="logo">
+      <a href="#home" className="logo" onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}>
         <div className="logo-icon">SB</div>
         <span className="logo-text">Sanya Bansal</span>
-      </Link>
+      </a>
       <ul className="nav-links">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/projects">Projects</Link></li>
-        <li><Link to="/education">Education</Link></li>
-        <li><Link to="/services">Services</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
+        <li>
+          <a 
+            href="#home" 
+            className={activeSection === 'home' ? 'active' : ''}
+            onClick={(e) => { e.preventDefault(); scrollToSection('home'); }}
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a 
+            href="#about" 
+            className={activeSection === 'about' ? 'active' : ''}
+            onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}
+          >
+            About
+          </a>
+        </li>
+        <li>
+          <a 
+            href="#projects" 
+            className={activeSection === 'projects' ? 'active' : ''}
+            onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }}
+          >
+            Projects
+          </a>
+        </li>
+        <li>
+          <a 
+            href="#education" 
+            className={activeSection === 'education' ? 'active' : ''}
+            onClick={(e) => { e.preventDefault(); scrollToSection('education'); }}
+          >
+            Education
+          </a>
+        </li>
+        <li>
+          <a 
+            href="#services" 
+            className={activeSection === 'services' ? 'active' : ''}
+            onClick={(e) => { e.preventDefault(); scrollToSection('services'); }}
+          >
+            Services
+          </a>
+        </li>
+        <li>
+          <a 
+            href="#contact" 
+            className={activeSection === 'contact' ? 'active' : ''}
+            onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}
+          >
+            Contact
+          </a>
+        </li>
       </ul>
     </nav>
   );

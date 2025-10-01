@@ -39,6 +39,7 @@ export default function About() {
           <a
             href="./Sanya Bansal-AI Resume .pdf"
             className="resume-link"
+            download="Sanya_Bansal_AI_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >

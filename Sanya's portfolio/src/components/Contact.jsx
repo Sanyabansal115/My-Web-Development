@@ -55,6 +55,9 @@ export default function Contact() {
     message: ''
   });
 
+  // Success message state for visual feedback
+  const [showSuccess, setShowSuccess] = useState(false);
+
   /**
    * Form Input Change Handler
    * 
@@ -89,14 +92,15 @@ export default function Contact() {
     // Prevent default form submission behavior
     formSubmissionEvent.preventDefault();
     
-    // Display confirmation message with submitted data
-    alert(
-      `Thank you, ${formData.firstName}!\n\nYour message has been received:\n` +
-      `Name: ${formData.firstName} ${formData.lastName}\n` +
-      `Email: ${formData.email}\n` +
-      `Phone: ${formData.phone}\n` +
-      `Message: ${formData.message}\n\nRedirecting to home...`
-    );
+    // Show success message
+    setShowSuccess(true);
+    
+    // Create a more user-friendly confirmation message
+    const confirmationMessage = `Thank you, ${formData.firstName}!\n\nYour message has been received:\nName: ${formData.firstName} ${formData.lastName}\nEmail: ${formData.email}\nPhone: ${formData.phone || 'Not provided'}\nMessage: ${formData.message}\n\nI'll get back to you soon!`;
+    
+    // Show confirmation using both alert and console for debugging
+    alert(confirmationMessage);
+    console.log('Form submitted:', formData);
     
     // Reset form to initial empty state
     setFormData({ 
@@ -107,8 +111,11 @@ export default function Contact() {
       message: '' 
     });
     
-    // Navigate to home page after brief delay
-    setTimeout(() => navigate('/'), 500);
+    // Hide success message and navigate after delay
+    setTimeout(() => {
+      setShowSuccess(false);
+      navigate('/');
+    }, 3000);
   };
 
   return (
@@ -156,6 +163,19 @@ export default function Contact() {
 
         <div className="contact-form">
           <h3>Send Me a Message</h3>
+          {showSuccess && (
+            <div className="success-message" style={{
+              backgroundColor: '#d4edda',
+              border: '1px solid #c3e6cb',
+              color: '#155724',
+              padding: '1rem',
+              borderRadius: '5px',
+              marginBottom: '1rem',
+              textAlign: 'center'
+            }}>
+              ✅ Thank you! Your message has been sent successfully!
+            </div>
+          )}
           <form onSubmit={handleSubmit}>
             <div className="form-row">
               <div className="form-group">

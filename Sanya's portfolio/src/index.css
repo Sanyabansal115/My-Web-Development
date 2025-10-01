@@ -92,9 +92,15 @@ body {
   display: flex;
   align-items: center;
   gap: 15px;
+  text-decoration: none;
+  color: inherit;
 }
 
-.logo-shape {
+.logo:hover {
+  text-decoration: none;
+}
+
+.logo-icon {
   width: 60px;
   height: 60px;
   background: linear-gradient(135deg, var(--vintage-orange), var(--vintage-orange-dark));
@@ -109,9 +115,10 @@ body {
   box-shadow: 0 4px 15px rgba(204, 107, 73, 0.3);
   transform: rotate(-5deg);
   transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
-.logo-shape:hover {
+.logo-icon:hover {
   transform: rotate(0deg) scale(1.05);
 }
 

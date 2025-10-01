@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 export default function Navigation() {
   return (
     <nav className="navigation">
-      <div className="logo">
+      <Link to="/" className="logo">
         <div className="logo-icon">SB</div>
         <span className="logo-text">Sanya Bansal</span>
-      </div>
+      </Link>
       <ul className="nav-links">
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>

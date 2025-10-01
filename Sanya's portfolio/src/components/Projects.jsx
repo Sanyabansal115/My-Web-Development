@@ -10,13 +10,13 @@ export default function Projects() {
       description:
         "Comprehensive salary analysis using Python and Jupyter Notebook. Analyzed salary distributions, career progression patterns, and compensation trends. Applied statistical methods and created professional visualizations using Matplotlib and Seaborn.",
       icon: "💰",
-      image: "/images/salary-project.png",
+      image: "./images/salary-project.png",
       tags: ["Python", "Jupyter", "Pandas", "Data Analysis"],
       type: "python",
-      notebookLink: "/projects/data-science/Project 1/project_ 1-Salary.ipynb",
+      notebookLink: "./projects/data-science/Project 1/project_ 1-Salary.ipynb",
       slidesLink:
-        "/projects/data-science/Project 1/project_ 1-Salary.slides.html",
-      datasetLink: "/projects/data-science/Project 1/003 salaries-by-college-major.csv",
+        "./projects/data-science/Project 1/project_ 1-Salary.slides.html",
+      datasetLink: "./projects/data-science/Project 1/003 salaries-by-college-major.csv",
     },
     {
       id: 2,
@@ -24,13 +24,13 @@ export default function Projects() {
       description:
         "Analyzed Lego datasets for coursework using Jupyter Notebook. Explored product categories, pricing trends, and popularity patterns. Applied data cleaning, transformation, and visualization techniques to derive insights.",
       icon: "🧱",
-      image: "/images/lego-project.png",
+      image: "./images/lego-project.png",
       tags: ["Python", "Jupyter", "Pandas", "Data Visualization"],
       type: "python",
       notebookLink:
-        "/projects/data-science/Project 4/Project-4-Lego_Analysis_for_Course.ipynb",
+        "./projects/data-science/Project 4/Project-4-Lego_Analysis_for_Course.ipynb",
       slidesLink:
-        "/projects/data-science/Project 4/Project-4-Lego_Analysis_for_Course.slides.html",
+        "./projects/data-science/Project 4/Project-4-Lego_Analysis_for_Course.slides.html",
     },
     {
       id: 3,
@@ -38,14 +38,14 @@ export default function Projects() {
       description:
         "Comparative study of programming languages using statistical analysis. Examined language popularity, usage trends, and performance metrics. Created comprehensive visualizations and detailed reports.",
       icon: "💻",
-      image: "/images/programming-languages.png",
+      image: "./images/programming-languages.png",
       tags: ["Python", "Jupyter", "Statistics", "Research"],
       type: "python",
       notebookLink:
-        "/projects/data-science/Project 2/Project-2_Programming_Languages_(start).ipynb",
+        "./projects/data-science/Project 2/Project-2_Programming_Languages_(start).ipynb",
       slidesLink:
-        "/projects/data-science/Project 2/Project-2_Programming_Languages_(start).slides.html",
-      datasetLink: "/projects/data-science/Project 2/002 QueryResults.csv",
+        "./projects/data-science/Project 2/Project-2_Programming_Languages_(start).slides.html",
+      datasetLink: "./projects/data-science/Project 2/002 QueryResults.csv",
     },
     {
       id: 4,
@@ -53,14 +53,14 @@ export default function Projects() {
       description:
         "Advanced statistical analysis utilizing Seaborn and linear regression models. Explored variable relationships, performed correlation analysis, and built predictive models with high accuracy.",
       icon: "📈",
-      image: "/images/regression-project.png",
+      image: "./images/regression-project.png",
       tags: ["Python", "Seaborn", "Linear Regression", "Machine Learning"],
       type: "python",
       notebookLink:
-        "/projects/data-science/Project 3/Project-3_Seaborn_and_Linear_Regression.ipynb",
+        "./projects/data-science/Project 3/Project-3_Seaborn_and_Linear_Regression.ipynb",
       slidesLink:
-        "/projects/data-science/Project 3/Project-3_Seaborn_and_Linear_Regression.slides.html",
-      datasetLink: "/projects/data-science/Project 3/cost_revenue_dirty.csv",
+        "./projects/data-science/Project 3/Project-3_Seaborn_and_Linear_Regression.slides.html",
+      datasetLink: "./projects/data-science/Project 3/cost_revenue_dirty.csv",
     },
     {
       id: 5,
@@ -68,7 +68,7 @@ export default function Projects() {
       description:
         "Advanced machine learning project predicting customer churn using telecommunications data. Implemented multiple ML algorithms including Logistic Regression and Decision Trees. Applied feature engineering, data preprocessing, and model evaluation to identify high-risk customers for targeted retention strategies.",
       icon: "🤖",
-      image: "/images/churn-prediction.png",
+      image: "./images/churn-prediction.png",
       tags: [
         "Machine Learning",
         "Python",
@@ -78,11 +78,11 @@ export default function Projects() {
       ],
       type: "ai-ml",
       notebookLink:
-        "/projects/ai-machine_learning/Project 1/Customer Churn Prediction.ipynb",
+        "./projects/ai-machine_learning/Project 1/Customer Churn Prediction.ipynb",
       slidesLink:
-        "/projects/ai-machine_learning/Project 1/Customer Churn Prediction.slides.html",
+        "./projects/ai-machine_learning/Project 1/Customer Churn Prediction.slides.html",
       datasetLink:
-        "/projects/ai-machine_learning/Project 1/Telco-Customer-Churn.csv",
+        "./projects/ai-machine_learning/Project 1/Telco-Customer-Churn.csv",
     },
     {
       id: 6,
@@ -90,7 +90,7 @@ export default function Projects() {
       description:
         "Served as team captain for two seasons. Led team to regional championships through strategic planning and mentoring. Demonstrated leadership, teamwork, and athletic excellence.",
       icon: "🏐",
-      image: "/images/volleyball-captain.jpg",
+      image: "./images/volleyball-captain.jpg",
       tags: ["Team Captain", "Leadership", "Athletics"],
       type: "sports",
     },
@@ -100,7 +100,7 @@ export default function Projects() {
       description:
         "Created diverse design, landscapes, and abstract art. Work featured in student exhibition.",
       icon: "🎨",
-      image: "/images/digital-art.jpg",
+      image: "./images/digital-art.jpg",
       tags: ["Digital Art", "Illustration"],
       type: "art",
     },

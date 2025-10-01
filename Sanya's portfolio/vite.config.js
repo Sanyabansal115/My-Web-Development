@@ -17,8 +17,8 @@ export default defineConfig({
   // Enable React plugin for JSX support and fast refresh
   plugins: [react()],
   
-  // Base public path - use relative path for GitHub Pages
-  base: './',
+  // Base public path - use root for Vercel deployment
+  base: '/',
   
   // Build configuration for production
   build: {

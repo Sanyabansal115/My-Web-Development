@@ -37,7 +37,7 @@ export default function About() {
             that drive innovation.
           </p>
           <a
-            href="./Sanya Bansal-AI Resume .pdf"
+            href="/Sanya Bansal-AI Resume .pdf"
             className="resume-link"
             download="Sanya_Bansal_AI_Resume.pdf"
             target="_blank"

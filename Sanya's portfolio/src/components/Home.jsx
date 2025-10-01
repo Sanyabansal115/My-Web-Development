@@ -1,9 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
-    <section className="home-section">
+    <section id="home" className="home-section">
       <div className="hero-content">
         <div className="portfolio-title">
           <h1 className="hero-title">SANYA<br/>BANSAL</h1>

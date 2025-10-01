@@ -11,28 +11,25 @@
  * - Contact information display with clickable links
  * - Form submission handling with user feedback
  * - Responsive design for all device sizes
- * - Navigation integration after form submission
+ * - Smooth scroll to home section after form submission
  * 
  * @author Sanya Bansal
- * @version 1.0.0
+ * @version 2.0.0
  * @since 2025-09-30
  */
 
-// Import React hooks and routing utilities
+// Import React hooks
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 
 /**
  * Contact Component
  * 
  * Renders a contact section with form and contact information.
- * Manages form state and handles form submission with navigation.
+ * Manages form state and handles form submission with smooth scrolling.
  * 
  * @returns {JSX.Element} Complete contact section with form and info
  */
 export default function Contact() {
-  // Navigation hook for programmatic routing
-  const navigate = useNavigate();
   
   /**
    * Form Data State Management
@@ -111,15 +108,18 @@ export default function Contact() {
       message: '' 
     });
     
-    // Hide success message and navigate after delay
+    // Hide success message and scroll to home section after delay
     setTimeout(() => {
       setShowSuccess(false);
-      navigate('/');
+      const homeElement = document.getElementById('home');
+      if (homeElement) {
+        homeElement.scrollIntoView({ behavior: 'smooth' });
+      }
     }, 3000);
   };
 
   return (
-    <section className="contact-section">
+    <section id="contact" className="contact-section">
       <h2 className="section-title">Get In Touch</h2>
       <p className="section-subtitle">
         I'd love to hear from you! Let's discuss your project or just connect.

@@ -27,45 +27,25 @@ import Contact from './components/Contact';        // Contact information and fo
  * 
  * Creates a single-page application layout where all sections are rendered
  * on one page with smooth scrolling navigation between them.
- * across all routes.
+ * Creates a single-page application layout where all sections are rendered
+ * on one page with smooth scrolling navigation between them.
  * 
- * Route Structure:
- * - / : Home page with hero section
- * - /about : Personal introduction and background
- * - /projects : Showcase of completed projects
- * - /education : Academic qualifications and certifications
- * - /services : Professional services offered
- * - /contact : Contact form and information
- * 
- * @returns {JSX.Element} The routing configuration with navigation
+ * @returns {JSX.Element} Single page layout with all sections
  */
 export default function MainRouter() {
   return (
     <>
-      {/* Persistent navigation bar across all pages */}
+      {/* Persistent navigation bar for smooth scrolling */}
       <Navigation />
       
-      {/* Main content area where page components are rendered */}
+      {/* Main content area with all sections on one page */}
       <main className="main-content">
-        <Routes>
-          {/* Home route - Landing page with hero section */}
-          <Route path="/" element={<Home />} />
-          
-          {/* About route - Personal introduction and background */}
-          <Route path="/about" element={<About />} />
-          
-          {/* Projects route - Portfolio of completed work */}
-          <Route path="/projects" element={<Projects />} />
-          
-          {/* Education route - Academic credentials and certifications */}
-          <Route path="/education" element={<Education />} />
-          
-          {/* Services route - Professional services and capabilities */}
-          <Route path="/services" element={<Services />} />
-          
-          {/* Contact route - Contact form and information */}
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        <Home />
+        <About />
+        <Projects />
+        <Education />
+        <Services />
+        <Contact />
       </main>
     </>
   );

@@ -112,7 +112,7 @@ export default function Education() {
    * Uses semantic HTML and accessible design patterns.
    */
   return (
-    <section className="education-section">
+    <section id="education" className="education-section">
       {/* Section header with main title */}
       <h2 className="section-title">Education & Qualifications</h2>
       

@@ -110,7 +110,7 @@ export default function Projects() {
     filter === "all" ? projects : projects.filter((p) => p.type === filter);
 
   return (
-    <section className="projects-section">
+    <section id="projects" className="projects-section">
       <h2 className="section-title">Projects & Achievements</h2>
 
       <div className="project-filters">

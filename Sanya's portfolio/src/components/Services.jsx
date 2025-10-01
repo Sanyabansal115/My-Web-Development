@@ -54,7 +54,7 @@ export default function Services() {
   ];
 
   return (
-    <section className="services-section">
+    <section id="services" className="services-section">
       <h2 className="section-title">AI & Data Science Services</h2>
       <p className="section-subtitle">
         Leveraging artificial intelligence and machine learning to provide cutting-edge data solutions
